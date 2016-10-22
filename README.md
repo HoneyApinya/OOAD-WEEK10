@@ -8,6 +8,7 @@ Sequence Diagram
 
 
 '''
+
 @startuml
 
 Jacob -> Bella : call
