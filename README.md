@@ -8,19 +8,12 @@ Sequence Diagram
 
  ```
 @startuml
-
 Jacob -> Bella : call
-
 Bella --> Jacob : answer the phone
-
 Edward -> Bella: call
-
 Edward <-- Bella : call waiting
-
 Bella <- Jacob : end call
-
 Bella --> Edward : answer the phone
-
 Edward <- Bella : end call
 
 @enduml
