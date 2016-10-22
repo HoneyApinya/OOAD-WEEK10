@@ -16,7 +16,7 @@ Edward <-- Bella : call waiting
 Bella <- Jacob : end call
 Bella --> Edward : answer the phone
 Edward <- Bella : end call
-@enduml'''
+@enduml
 
 README.md 
 md เป็นภาษา Markdown นิยมใช้ใน wiki ของ github 
