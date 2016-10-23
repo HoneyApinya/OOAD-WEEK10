@@ -111,16 +111,49 @@ option -> like : like
 option -> chat :chat
 
 @enduml
-
 ```
+* การเข้าชมภาพยนตร์ : 5
 
-
-*    :5
- 
- ![]()
+![](http://www.plantuml.com/plantuml/img/VPDVRu8m5CMVwQUuoPwN8AWm7nOfo9DRbcnVe9OxROJMrQBPbdttLVaJ4BLFv9pJtpst2VEzOTgKHKxsMo5tJBC2LenlrrgLCejLhZGyf6coY99EOiDaTjJ269HWT8cau-tngqJ94Nw94scjZYt4jSTgt2XDbSvGrqv8nvEHJvob-CIba7XX-f4VTSnXkTYDAN68ysOt4Lpic3GzXBS8wIJe-vUK9AHf4lOogPBcbHLuBXXuqu7vBduGHi50hv7KzTsfUofMhNmvaYOqcDBQxTnBqz7uoU_exPnMgMhvNfpu7laZxAJ32pD2Djz26iq8EMlm-0pSFbt1O0P7PlW661Jg891KkNk15c2R6zGsS3R0Bhn5GnhP9ghe33umpy5icWZijE1NGMjnG4kJ-7qDixPNUwEWsxREtwjJXM_skSQwqQWX3IfLPuuoit_GFm00)
  
  ```
+ @startuml
+skinparam backgroundColor #FFDEAD
+skinparam handwritten true
+
+skinparam sequence {
+	ArrowColor #FF0000
+	ActorBorderColor #8B4513
+	LifeLineBorderColor #8B3A3A
+	LifeLineBackgroundColor #FFC0CB
+	
+	ParticipantBorderColor #2E8B57
+	ParticipantBackgroundColor #D8BFD8
+	ParticipantFontName #8B4726
+	ParticipantFontSize 17
+	ParticipantFontColor #B03060
+	
+	ActorBackgroundColor #BDB76B
+	ActorFontColor #FF1493
+	ActorFontSize 17
+	ActorFontName #32CD32
+}
+actor Matin
+actor Mintra
+
+Matin -> cinema : watch a movie
+Mintra -> cinema : watch a movie
+Matin -> counter : movie ticket
+counter -> Matin : Tell the ticket price
+Matin -> counter : give money
+counter -> Matin : get movie ticket
  
+Mintra -> counter  : movie ticket
+counter -> Mintra : Tell the ticket price
+Mintra -> counter  : give money
+counter -> Mintra : get movie ticket
+
+@enduml
  ```
 
 
